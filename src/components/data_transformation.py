@@ -52,7 +52,7 @@ class DataTransformation:
 
             preprocessor=ColumnTransformer(
                 [
-                    ("num_pipeline",num_pipeline,numerical_columns)
+                    ("num_pipeline",num_pipeline,numerical_columns),
                     ("cat_pipeline",cat_pipeline,categorical_columns)
                 ]
             )
